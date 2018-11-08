@@ -2,7 +2,7 @@
 title: "Mes Premiers Pas"
 hero_image: "hero.jpg"
 date: 2018-11-06T08:29:44+01:00
-draft: true
+draft: false 
 tag: test, début
 author: igor
 summary: Ceci est un test.
