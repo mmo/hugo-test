@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+language: "fr"
 ---
 
-Contact us!
+Contactez-nous !
