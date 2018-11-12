@@ -1,15 +1,16 @@
 # The URL of your website.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
 baseurl = "https://our-hugo-test.netlify.com/"
-languageCode = "en"
-defaultContentLanguage = "en"
+languageCode = "fr"
+defaultContentLanguage = "fr"
 theme = "hugo-bootstrap"
+enableGitInfo = true
 
 # Title of your site
 title = "Tester HUGO"
 
 # Pagination
-paginate = 3
+paginate = 4
 paginatePath = "page"
 
 [taxonomies]
@@ -19,14 +20,41 @@ paginatePath = "page"
 # Google analytics
 # googleAnalytics = "UA-47268287-3"
 
+
+[languages.fr]
+  languageName = "Français"
+
+  copyright = "Par RERO"
+  
+  [[languages.fr.menu.main]]
+    url = "/"
+    name = "Accueil"
+    weight = 1
+  [[languages.fr.menu.main]]
+    url = "/a-propos/"
+    name = "À propos"
+    weight = 2
+  [[languages.fr.menu.main]]
+    url = "/categories/ils/"
+    name = "ils"
+    weight = 3
+  [[languages.fr.menu.main]]
+    url = "/categories/test/"
+    name = "test"
+    weight = 4
+  [[languages.fr.menu.main]]
+    url = "/contact/"
+    name = "Contact"
+    weight = 5
+
 [languages.en]
   languageName = "English"
 
   # Replace the default footer message with a localized message
-  # copyright = "Hugo template made with ❤ by Xzya"
-
+  copyright = "By RERO"
+  
   [[languages.en.menu.main]]
-    url = "/"
+    url = "/en/"
     name = "Home"
     weight = 1
   [[languages.en.menu.main]]
@@ -38,24 +66,10 @@ paginatePath = "page"
     name = "Contact"
     weight = 3
 
-[languages.es]
-  languageName = "Español"
-
-  [[languages.es.menu.main]]
-    url = "/es/"
-    name = "Casa"
-    weight = 1
-  [[languages.es.menu.main]]
-    url = "/about/"
-    name = "Acerca de"
-    weight = 2
-  [[languages.es.menu.main]]
-    url = "/contact/"
-    name = "Contacto"
-    weight = 3
-
 [languages.de]
   languageName = "Deutsch"
+
+  copyright = "Bei RERO"
 
   [[languages.de.menu.main]]
     url = "/de/"
@@ -73,7 +87,7 @@ paginatePath = "page"
 # Links format
 
 [permalinks]
-  post = "/:year/:month/:title/"
+  post = "/:filename/"
 
 [params]
   # Main sections (currently used for the recent posts in the sidebar)
