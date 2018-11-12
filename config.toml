@@ -1,98 +1,99 @@
 # The URL of your website.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
 baseurl = "https://our-hugo-test.netlify.com/"
-languageCode = "fr"
+languageCode = "en"
+defaultContentLanguage = "en"
+theme = "hugo-bootstrap"
 
 # Title of your site
 title = "Tester HUGO"
 
-# Your copyright notice - appears in site footer.
-# To display a copyright symbol, type `&copy;`.
-copyright = "♡2018 Copying is an act of love. Please copy."
+# Pagination
+paginate = 3
+paginatePath = "page"
 
-theme = "minimal-academic"
-enableEmoji = true
-footnotereturnlinkcontents = "<sup>^</sup>"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-#preserveTaxonomyNames = true
-paginate = 10
+[taxonomies]
+  tag = "tags"
+  category = "categories"
 
-# Enable comments by entering your Disqus shortname
-disqusShortname = ""
+# Google analytics
+# googleAnalytics = "UA-47268287-3"
 
-# Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+[languages.en]
+  languageName = "English"
 
-# Get last modified date for content from Git?
-enableGitInfo = false
+  # Replace the default footer message with a localized message
+  # copyright = "Hugo template made with ❤ by Xzya"
 
-[outputs]
-  home = [ "HTML", "CSS", "RSS" ]
-  section = [ "HTML", "RSS" ]
+  [[languages.en.menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+  [[languages.en.menu.main]]
+    url = "/about/"
+    name = "About"
+    weight = 2
+  [[languages.en.menu.main]]
+    url = "/contact/"
+    name = "Contact"
+    weight = 3
 
-# Configure BlackFriday Markdown rendering.
-#   See: https://gohugo.io/readfiles/bfconfig/
-[blackfriday]
-  hrefTargetBlank = true  # `true` opens external links in a new tab.
-  fractions = true  # `false` disables smart fractions (e.g. 5/12 formatted as a fraction).
-  smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
+[languages.es]
+  languageName = "Español"
+
+  [[languages.es.menu.main]]
+    url = "/es/"
+    name = "Casa"
+    weight = 1
+  [[languages.es.menu.main]]
+    url = "/about/"
+    name = "Acerca de"
+    weight = 2
+  [[languages.es.menu.main]]
+    url = "/contact/"
+    name = "Contacto"
+    weight = 3
+
+[languages.de]
+  languageName = "Deutsch"
+
+  [[languages.de.menu.main]]
+    url = "/de/"
+    name = "Start"
+    weight = 1
+  [[languages.de.menu.main]]
+    url = "/about/"
+    name = "Über uns"
+    weight = 2
+  [[languages.de.menu.main]]
+    url = "/contact/"
+    name = "Kontakt"
+    weight = 3
+
+# Links format
+
+[permalinks]
+  post = "/:year/:month/:title/"
 
 [params]
-  # Your details.
-  name = "Tester HUGO"
-  bio = "Premiers pas avec HUGO."
+  # Main sections (currently used for the recent posts in the sidebar)
+  mainSections = ["post"]
 
-  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  # Default author
+  author = "John Doe"
 
-  location = "Martigny"
+  # Date format (default: Jan 2, 2006)
+  # date_format = "Jan 2, 2006"
 
-  # Discussion link (e.g. link to a forum, mailing list, or chat).
-  #   Uncomment line below to use.
-  #   discussion = { name = "Discuss", url = "https://discourse.gohugo.io" }
+  # Display post summaries instead of content in list templates (default: true)
+  # truncate = false
 
-  # Date and time format (refer to Go's date format: http://fuckinggodateformat.com )
-  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-  date_format = "Jan 2, 2006"
-  #   Examples: "3:04 pm" or "15:04"
-  time_format = "3:04 PM"
+  [params.sidebar]
+    # Whether to show the recent posts or not (default: true)
+    # showRecent = false
 
-  # Display comment count? Requires commenting to be enabled.
-  comment_count = true
+    # Whether to show the taxonomies or not (default: true)
+    # showTaxonomy = false
 
-  # Enable native social sharing buttons?
-  sharing = true
-
-  # Privacy pack
-  #   Show a cookie consent message to visitors
-  #   Anonymize IP in Google Analytics (if enabled)
-  privacy_pack = false
-
-  [[params.social]]
-    # icon = "instagram"
-    # icon_pack = "fa"
-    # link = "//instagram.com/jhu247"
-    # text = "Instagram"
-
-  # [[params.social]]
-    # icon = "linkedin"
-    # icon_pack = "fa"
-    # link = "//linkedin.com/in/joshua-hu-12290a43"
-    # text = "LinkedIn"
-
-  [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "//twitter.com/rero_centrale"
-    text = "Twitter"
-
-  [[params.social]]
-    icon = "github"
-    icon_pack = "fa"
-    link = "//github.com/rero"
-    text = "Github"
-
-# Taxonomies.
-# [taxonomies]
-#   tag = "tags"
-#   category = "categories"
-#   publication_type = "publication_types"
+    # How many posts to show on the sidebar (Default: 5)
+    # num_recent_posts = 5
