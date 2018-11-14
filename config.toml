@@ -7,7 +7,7 @@ theme = "hugo-bootstrap"
 enableGitInfo = true
 
 # Title of your site
-title = "Tester HUGO"
+title = "Test du blog RERO21"
 
 # Pagination
 paginate = 4
@@ -25,46 +25,31 @@ paginatePath = "page"
   languageName = "Français"
 
   copyright = "Par RERO"
-  
+
   [[languages.fr.menu.main]]
-    url = "/"
-    name = "Accueil"
+    url = "/presentation/"
+    name = "Présentation"
     weight = 1
   [[languages.fr.menu.main]]
-    url = "/a-propos/"
-    name = "À propos"
+    url = "/liens/"
+    name = "Liens et informations utiles"
     weight = 2
-  [[languages.fr.menu.main]]
-    url = "/categories/ils/"
-    name = "ils"
-    weight = 3
-  [[languages.fr.menu.main]]
-    url = "/categories/test/"
-    name = "test"
-    weight = 4
-  [[languages.fr.menu.main]]
-    url = "/contact/"
-    name = "Contact"
-    weight = 5
+
 
 [languages.en]
   languageName = "English"
 
   # Replace the default footer message with a localized message
   copyright = "By RERO"
-  
+
   [[languages.en.menu.main]]
-    url = "/en/"
-    name = "Home"
+    url = "/presentation/"
+    name = "Presentation"
     weight = 1
   [[languages.en.menu.main]]
-    url = "/about/"
-    name = "About"
+    url = "/links/"
+    name = "Useful links and informations"
     weight = 2
-  [[languages.en.menu.main]]
-    url = "/contact/"
-    name = "Contact"
-    weight = 3
 
 [languages.de]
   languageName = "Deutsch"
@@ -72,17 +57,13 @@ paginatePath = "page"
   copyright = "Bei RERO"
 
   [[languages.de.menu.main]]
-    url = "/de/"
-    name = "Start"
+    url = "/prasentation/"
+    name = "Präsentation"
     weight = 1
   [[languages.de.menu.main]]
-    url = "/about/"
-    name = "Über uns"
+    url = "/links/"
+    name = "Nützliche Links und Informationen"
     weight = 2
-  [[languages.de.menu.main]]
-    url = "/contact/"
-    name = "Kontakt"
-    weight = 3
 
 # Links format
 
@@ -94,7 +75,7 @@ paginatePath = "page"
   mainSections = ["post"]
 
   # Default author
-  author = "John Doe"
+  # author = "RERO"
 
   # Date format (default: Jan 2, 2006)
   # date_format = "Jan 2, 2006"
