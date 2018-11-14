@@ -3,7 +3,7 @@
 baseurl = "https://our-hugo-test.netlify.com/"
 languageCode = "fr"
 defaultContentLanguage = "fr"
-theme = "hugo-bootstrap"
+theme = "my-hugo-bootstrap"
 enableGitInfo = true
 
 # Title of your site
@@ -24,8 +24,9 @@ paginatePath = "page"
 [languages.fr]
   languageName = "Français"
 
-  copyright = "Par RERO"
-
+  # Replace the default footer message with a localized message
+  copyright = "© copyright 2018 RERO"
+  
   [[languages.fr.menu.main]]
     url = "/presentation/"
     name = "Présentation"
@@ -40,8 +41,8 @@ paginatePath = "page"
   languageName = "English"
 
   # Replace the default footer message with a localized message
-  copyright = "By RERO"
-
+  copyright = "© copyright 2018 RERO"
+  
   [[languages.en.menu.main]]
     url = "/presentation/"
     name = "Presentation"
@@ -54,7 +55,8 @@ paginatePath = "page"
 [languages.de]
   languageName = "Deutsch"
 
-  copyright = "Bei RERO"
+  # Replace the default footer message with a localized message
+  copyright = "© copyright 2018 RERO"
 
   [[languages.de.menu.main]]
     url = "/prasentation/"
@@ -78,10 +80,13 @@ paginatePath = "page"
   # author = "RERO"
 
   # Date format (default: Jan 2, 2006)
-  # date_format = "Jan 2, 2006"
+  date_format = "2006-01-02"
 
   # Display post summaries instead of content in list templates (default: true)
   # truncate = false
+
+  # Display social sharing buttons (default: true)
+  # share = true 
 
   [params.sidebar]
     # Whether to show the recent posts or not (default: true)

@@ -16,5 +16,5 @@ Taciti mus nulla fringilla senectus himenaeos ut vivamus dictumst adipiscing por
 Il s'agit de pointer vers :
 
 - [RERO ILS](https://ils.test.rero.ch 'Le site démo de RERO ILS')
-- <i class="fa fa-github"></i> [`rero-ils`](https://github.com/rero/rero-ils 'Le projet rero-ils sur GitHub')
+- <i class="fab fa-github"></i> [`rero-ils`](https://github.com/rero/rero-ils 'Le projet rero-ils sur GitHub')
 - le [wiki](https://github.com/rero/rero-ils/wiki 'Le wiki de RERO ILS')
